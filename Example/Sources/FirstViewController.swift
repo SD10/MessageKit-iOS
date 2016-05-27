@@ -18,7 +18,10 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+import MessageKit
+
+
+final class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
