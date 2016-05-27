@@ -21,7 +21,7 @@ import UIKit
 import MessageKit
 
 
-final class SecondViewController: UIViewController {
+final class SettingsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

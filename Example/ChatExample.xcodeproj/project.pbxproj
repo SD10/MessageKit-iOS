@@ -11,8 +11,8 @@
 		882B5E821CF7D53600B6E160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882B5E791CF7D53600B6E160 /* Assets.xcassets */; };
 		882B5E831CF7D53600B6E160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882B5E7A1CF7D53600B6E160 /* LaunchScreen.storyboard */; };
 		882B5E841CF7D53600B6E160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882B5E7C1CF7D53600B6E160 /* Main.storyboard */; };
-		882B5E851CF7D53600B6E160 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882B5E7E1CF7D53600B6E160 /* FirstViewController.swift */; };
-		882B5E871CF7D53600B6E160 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882B5E801CF7D53600B6E160 /* SecondViewController.swift */; };
+		882B5E851CF7D53600B6E160 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882B5E7E1CF7D53600B6E160 /* InboxViewController.swift */; };
+		882B5E871CF7D53600B6E160 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882B5E801CF7D53600B6E160 /* SettingsViewController.swift */; };
 		882B5E901CF7D56000B6E160 /* ChatExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882B5E8E1CF7D56000B6E160 /* ChatExampleUITests.swift */; };
 		882B5E951CF7D56E00B6E160 /* ChatExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882B5E931CF7D56E00B6E160 /* ChatExampleTests.swift */; };
 		882B5EA01CF7D8D100B6E160 /* MessageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882B5E9D1CF7D8CA00B6E160 /* MessageKit.framework */; };
@@ -79,9 +79,9 @@
 		882B5E791CF7D53600B6E160 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		882B5E7B1CF7D53600B6E160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		882B5E7D1CF7D53600B6E160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		882B5E7E1CF7D53600B6E160 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		882B5E7E1CF7D53600B6E160 /* InboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
 		882B5E7F1CF7D53600B6E160 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		882B5E801CF7D53600B6E160 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		882B5E801CF7D53600B6E160 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		882B5E8E1CF7D56000B6E160 /* ChatExampleUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatExampleUITests.swift; sourceTree = "<group>"; };
 		882B5E8F1CF7D56000B6E160 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		882B5E931CF7D56E00B6E160 /* ChatExampleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatExampleTests.swift; sourceTree = "<group>"; };
@@ -141,11 +141,11 @@
 			children = (
 				882B5E781CF7D53600B6E160 /* AppDelegate.swift */,
 				882B5E791CF7D53600B6E160 /* Assets.xcassets */,
-				882B5E7E1CF7D53600B6E160 /* FirstViewController.swift */,
+				882B5E7E1CF7D53600B6E160 /* InboxViewController.swift */,
 				882B5E7F1CF7D53600B6E160 /* Info.plist */,
 				882B5E7A1CF7D53600B6E160 /* LaunchScreen.storyboard */,
 				882B5E7C1CF7D53600B6E160 /* Main.storyboard */,
-				882B5E801CF7D53600B6E160 /* SecondViewController.swift */,
+				882B5E801CF7D53600B6E160 /* SettingsViewController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -333,9 +333,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				882B5E871CF7D53600B6E160 /* SecondViewController.swift in Sources */,
+				882B5E871CF7D53600B6E160 /* SettingsViewController.swift in Sources */,
 				882B5E811CF7D53600B6E160 /* AppDelegate.swift in Sources */,
-				882B5E851CF7D53600B6E160 /* FirstViewController.swift in Sources */,
+				882B5E851CF7D53600B6E160 /* InboxViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

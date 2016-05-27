@@ -21,7 +21,7 @@ import UIKit
 import MessageKit
 
 
-final class FirstViewController: UIViewController {
+final class InboxViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
