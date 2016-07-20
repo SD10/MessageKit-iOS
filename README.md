@@ -1,6 +1,6 @@
 # MessageKit
 
-[![Build Status](https://travis-ci.org/MessageKit/MessageKit.svg)](https://travis-ci.org/MessageKit/MessageKit) [![codecov](https://codecov.io/gh/MessageKit/MessageKit/branch/develop/graph/badge.svg)](https://codecov.io/gh/MessageKit/MessageKit)
+[![Build Status](https://travis-ci.org/MessageKit/MessageKit-iOS.svg)](https://travis-ci.org/MessageKit/MessageKit-iOS) [![codecov](https://codecov.io/gh/MessageKit/MessageKit-iOS/branch/develop/graph/badge.svg)](https://codecov.io/gh/MessageKit/MessageKit-iOS)
 
 *Eventually*, a Swift re-write of [JSQMessagesViewController](https://github.com/jessesquires/JSQMessagesViewController).
 
