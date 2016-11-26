@@ -20,9 +20,9 @@ import UIKit
 import Foundation
 
 
-class MessagesViewController: UICollectionViewController {
+public final class MessagesViewController: UICollectionViewController {
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
     }
 }

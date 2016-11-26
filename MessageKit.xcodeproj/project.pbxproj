@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		882D75841DE507320033F95F /* MessagesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882D75831DE507320033F95F /* MessagesDataSource.swift */; };
 		888CEBFC1D3FD525005178DE /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CEBFB1D3FD525005178DE /* MessagesViewController.swift */; };
 		88916B2D1CF0DF2F00469F91 /* MessageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88916B221CF0DF2F00469F91 /* MessageKit.framework */; };
 		88916B401CF0DF5100469F91 /* MessageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 88916B3E1CF0DF5100469F91 /* MessageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88916B451CF0DF5900469F91 /* MessageKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88916B431CF0DF5900469F91 /* MessageKitTests.swift */; };
-		88916B471CF0DFE600469F91 /* MessageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88916B461CF0DFE600469F91 /* MessageData.swift */; };
+		88916B471CF0DFE600469F91 /* MessageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88916B461CF0DFE600469F91 /* MessageProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		882D75831DE507320033F95F /* MessagesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesDataSource.swift; sourceTree = "<group>"; };
 		888CEBFB1D3FD525005178DE /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		88916B221CF0DF2F00469F91 /* MessageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MessageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88916B2C1CF0DF2F00469F91 /* MessageKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessageKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,7 +34,7 @@
 		88916B3E1CF0DF5100469F91 /* MessageKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageKit.h; sourceTree = "<group>"; };
 		88916B421CF0DF5900469F91 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88916B431CF0DF5900469F91 /* MessageKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageKitTests.swift; sourceTree = "<group>"; };
-		88916B461CF0DFE600469F91 /* MessageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageData.swift; sourceTree = "<group>"; };
+		88916B461CF0DFE600469F91 /* MessageProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				88916B3D1CF0DF5100469F91 /* Info.plist */,
-				88916B461CF0DFE600469F91 /* MessageData.swift */,
 				88916B3E1CF0DF5100469F91 /* MessageKit.h */,
+				88916B461CF0DFE600469F91 /* MessageProtocol.swift */,
+				882D75831DE507320033F95F /* MessagesDataSource.swift */,
 				888CEBFB1D3FD525005178DE /* MessagesViewController.swift */,
 			);
 			path = Sources;
@@ -149,7 +152,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Hexed Bits";
 				TargetAttributes = {
 					88916B211CF0DF2F00469F91 = {
@@ -201,8 +204,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882D75841DE507320033F95F /* MessagesDataSource.swift in Sources */,
 				888CEBFC1D3FD525005178DE /* MessagesViewController.swift in Sources */,
-				88916B471CF0DFE600469F91 /* MessageData.swift in Sources */,
+				88916B471CF0DFE600469F91 /* MessageProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +243,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -289,8 +295,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -322,6 +330,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -342,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
