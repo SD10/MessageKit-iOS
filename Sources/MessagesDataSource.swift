@@ -47,15 +47,7 @@ public struct Avatar {
     }
 
     public func image(highlighted: Bool) -> UIImage {
-        guard let image = image else {
-            return placeholderImage
-        }
-
-        guard let highlightedImage = highlightedImage else {
-            return image
-        }
-
-        return highlighted ? image : highlightedImage
+        return (highlighted ? highlightedImage : image) ?? placeholderImage
     }
 }
 
